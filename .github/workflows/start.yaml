@@ -11,6 +11,5 @@ jobs:
 
     steps:
     - name: Print Hello
-      run: echo "Hello"
-      username=$USERNAME
-      echo $username
+    - run: 
+        username=${{ secrets.USERNAME }}
